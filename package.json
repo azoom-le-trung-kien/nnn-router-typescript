@@ -1,0 +1,46 @@
+{
+	"name": "ts-test",
+	"version": "0.0.1",
+	"description": "",
+	"main": "./dist/index.js",
+	"private": true,
+	"repository": "",
+	"license": "MIT",
+	"scripts": {
+		"start": "env $(grep -v '^#' .env) ts-node src/index.ts",
+		"lint": "tslint -p tsconfig.json",
+		"dev": "env $(grep -v '^#' .env) nodemon src/index.ts"
+	},
+	"_moduleAliases": {
+		"@middleware": "src/middleware"
+	},
+	"devDependencies": {
+		"@types/cors": "^2.8.6",
+		"@types/ejs": "^3.0.0",
+		"@types/express": "^4.17.2",
+		"@types/node": "^13.7.0",
+		"gulp": "^4.0.2",
+		"nodemon": "^2.0.2",
+		"prettier": "^1.19.1",
+		"reflect-metadata": "^0.1.13",
+		"source-map-support": "^0.5.16",
+		"ts-node": "^10.7.0",
+		"tslint": "^6.0.0",
+		"tslint-config-airbnb": "^5.11.2",
+		"tslint-config-prettier": "^1.18.0",
+		"typescript": "^3.7.5"
+	},
+	"dependencies": {
+		"@types/statuses": "^2.0.0",
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"ejs": "^3.0.1",
+		"express": "^4.17.1",
+		"express-openapi-validator": "^4.13.7",
+		"express-promise-router": "^4.1.1",
+		"module-alias": "^2.2.2",
+		"nnn-router": "^1.1.6",
+		"node-cache": "^5.1.0",
+		"statuses": "^2.0.1"
+	}
+}

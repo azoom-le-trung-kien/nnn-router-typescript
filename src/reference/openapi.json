@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "description": "test",
+    "title": "Test",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Azoom",
+      "email": "le.trung.kien@azoom.jp"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000",
+      "description": "localhost-dev"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Branch",
+      "description": "Branch performance"
+    },
+    {
+      "name": "User",
+      "description": "User performance"
+    }
+  ],
+  "paths": {
+    "/other": {
+      "parameters": [],
+      "get": {
+        "summary": "",
+        "tags": [],
+        "operationId": "4",
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
